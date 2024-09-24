@@ -12,3 +12,11 @@ function getTextValueById(id){
     return textNumber;
 
 }
+
+function getContainerById(id){
+    document.getElementById('main-container').classList.add('hidden');
+    document.getElementById('transection').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+
+}

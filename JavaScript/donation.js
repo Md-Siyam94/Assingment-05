@@ -18,8 +18,27 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
     
         document.getElementById('noakhali-amount').innerText = newDonationOfNoakhali;
         console.log(newDonationOfNoakhali)
+        // adding transections
+        // text
+        const donationText = document.getElementById('noakhali-donation-text').innerText;
+        // Adding Transection
+        const div = document.createElement('div')
+        div.classList.add('border')
+        div.classList.add('h-24')
+        div.classList.add('w-11/12')
+        div.classList.add('p-4') 
+        div.classList.add('mx-auto')
+        div.classList.add('my-6')
+        div.classList.add('rounded-lg')
+        const h3 = document.createElement('h3')
+        h3.classList.add('text-base')
+        h3.classList.add('font-medium')
+        h3.innerText = `You have Donated ${noakhaliInputNumber} tk on ${donationText}`
+        div.append(h3);
 
-         
+        document.getElementById('transection').appendChild(div)
+
+
     }
     else{
         alert('Please Try again !')
@@ -46,7 +65,25 @@ document.getElementById('feni-donation-btn').addEventListener('click',function(e
         document.getElementById('feni-amount').innerText = newDonationOfFeni;
         console.log(newDonationOfFeni)
 
-      
+       // adding transections
+        // text
+        const donationText = document.getElementById('feni-donation-text').innerText;
+        // Adding Transection
+        const div = document.createElement('div')
+        div.classList.add('border')
+        div.classList.add('h-24')
+        div.classList.add('w-11/12')
+        div.classList.add('p-4') 
+        div.classList.add('mx-auto')
+        div.classList.add('my-6')
+        div.classList.add('rounded-lg')
+        const h3 = document.createElement('h3')
+        h3.classList.add('text-base')
+        h3.classList.add('font-medium')
+        h3.innerText = `You have Donated ${feniInputNumber} tk on ${donationText}`
+        div.append(h3);
+
+        document.getElementById('transection').appendChild(div)
 
     }
     else{
@@ -72,8 +109,39 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
     
         document.getElementById('quota-donation-amount').innerText = newDonationOfQuotaMovement;
         console.log(newDonationOfQuotaMovement)
+
+         // adding transections
+        // text
+        const donationText = document.getElementById('movemnet-donation-text').innerText;
+        // Adding Transection
+        const div = document.createElement('div')
+        div.classList.add('border')
+        div.classList.add('h-24')
+        div.classList.add('w-11/12')
+        div.classList.add('p-4') 
+        div.classList.add('mx-auto')
+        div.classList.add('my-6')
+        div.classList.add('rounded-lg')
+        const h3 = document.createElement('h3')
+        h3.classList.add('text-base')
+        h3.classList.add('font-medium')
+        h3.innerText = `You have Donated ${quotaInputNumber} tk on ${donationText}`
+        div.append(h3);
+
+        document.getElementById('transection').appendChild(div)
+
     }
     else{
         alert('Please Try again !')
     }
+})
+
+
+document.getElementById('donation').addEventListener('click',function(){
+    getContainerById('main-container');
+    document.getElementById('history').classList.add('bg-lime-300')
+})
+
+document.getElementById('history').addEventListener('click',function(){
+    getContainerById('transection');
 })

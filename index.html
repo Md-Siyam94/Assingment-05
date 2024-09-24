@@ -38,13 +38,18 @@
       </section>
       <section>
         <div class="flex justify-center gap-5 border pt-12 pb-6 bg-stone-50 ">
-          <button class="btn w-28 font-bold text-base bg-lime-300 hover:bg-lime-400 ">Donation</button>
-          <button class="btn w-24 font-bold text-base">History</button>
+          <button id="donation" class="btn w-28 font-bold text-base bg-lime-300 hover:bg-lime-400 ">Donation</button>
+          <button id="history" class="btn w-24 font-bold text-base">History</button>
         </div>
+        <section id="transection"  class="hidden">
+          <div class="w-11/12 flex justify-center border">
+           
+          </div>
+        </section>
       </section>
     </header>
   <!-- main start -->
-    <main class="w-4/5 mx-auto ">
+    <main id="main-container" class="w-4/5 mx-auto ">
       <section>
         <div class="flex px-6 pt-6 rounded-lg gap-7 border ">
           <div>
@@ -56,20 +61,23 @@
               <h3 id="noakhali-amount" class="font-medium text-zinc-500">14500</h3>
               <h3 class="font-medium text-zinc-500">BDT</h3>
             </div>
-            <h3 class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
+            <h3 id="noakhali-donation-text" class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
             <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
             <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
                <!-- modal start -->
          <!-- Open the modal using ID.showModal() method -->
-         <button id="noakhali-donation-btn" class="btn w-full" onclick="my_modal_5.showModal('noakhali-donation-btn')">Donation Now</button>
+         <button id="noakhali-donation-btn" class="btn w-full my-5 bg-lime-300 hover:bg-lime-400" onclick="my_modal_5.showModal('noakhali-donation-btn')">Donation Now</button>
          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-           <div class="modal-box">
-             <!-- <h3 class="text-lg font-bold">Congratulations!</h3> -->
+           <div class="modal-box  text-center  ">
+             <h3 class="text-2xl font-bold ">Congrats!</h3>
+             <img class="h-8 w-8 mx-auto my-4" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+             <p class="my-0">You Have Donate for Humankind</p>
+             <h3 class="font-bold text-xl my-3">Successfully</h3>
             
              <div class="modal-action">
                <form method="dialog">
                  <!-- if there is a button in form, it will close the modal -->
-                 <button class="btn">Close</button>
+                 <button class="btn mx-auto">Close connfirmation</button>
                </form>
              </div>
            </div>
@@ -93,10 +101,29 @@
               <h3 id="feni-amount" class="font-medium text-zinc-500">25500</h3>
               <h3 class="font-medium text-zinc-500">BDT</h3>
             </div>
-            <h3 class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
+            <h3 id="feni-donation-text" class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
             <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
             <input id="feni-input" type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
-            <button id="feni-donation-btn" class="btn w-full bg-lime-300 hover:bg-lime-400  rounded-lg my-5">Donate Now</button>
+             <!-- modal start -->
+         <!-- Open the modal using ID.showModal() method -->
+         <button id="feni-donation-btn" class="btn w-full my-5 bg-lime-300 hover:bg-lime-400" onclick="my_modal_56.showModal('feni-donation-btn')">Donation Now</button>
+         <dialog id="my_modal_56" class="modal modal-bottom sm:modal-middle">
+           <div class="modal-box  text-center  ">
+             <h3 class="text-2xl font-bold ">Congrats!</h3>
+             <img class="h-8 w-8 mx-auto my-4" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+             <p class="my-0">You Have Donate for Humankind</p>
+             <h3 class="font-bold text-xl my-3">Successfully</h3>
+            
+             <div class="modal-action">
+               <form method="dialog">
+                 <!-- if there is a button in form, it will close the modal -->
+                 <button class="btn mx-auto">Close connfirmation</button>
+               </form>
+             </div>
+           </div>
+         </dialog>
+                 <!-- modal end -->
+          
           </div>
         </div>
       </section>
@@ -113,17 +140,40 @@
               <h3 id="quota-donation-amount" class="font-medium text-zinc-500">12000</h3>
               <h3 class="font-medium text-zinc-500">BDT</h3>
             </div>
-            <h3 class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
+            <h3 id="movement-donation-text" class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
             <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
             <input id="quota-input" type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
-            <button id="quota-movement-btn" class="btn w-full bg-lime-300 hover:bg-lime-400   rounded-lg my-5">Donate Now</button>
+             <!-- modal start -->
+         <!-- Open the modal using ID.showModal() method -->
+         <button id="quota-movement-btn" class="btn w-full my-5 bg-lime-300 hover:bg-lime-400" onclick="my_modal_55.showModal('quota-movement-btn')">Donation Now</button>
+         <dialog id="my_modal_55" class="modal modal-bottom sm:modal-middle">
+           <div class="modal-box  text-center  ">
+             <h3 class="text-2xl font-bold ">Congrats!</h3>
+             <img class="h-8 w-8 mx-auto my-4" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+             <p class="my-0">You Have Donate for Humankind</p>
+             <h3 class="font-bold text-xl my-3">Successfully</h3>
+            
+             <div class="modal-action">
+               <form method="dialog">
+                 <!-- if there is a button in form, it will close the modal -->
+                 <button class="btn mx-auto">Close connfirmation</button>
+               </form>
+             </div>
+           </div>
+         </dialog>
+                 <!-- modal end -->
+          
           </div>
         </div>
       </section>
 
 
+      
+
     </main>
   <!-- main end -->
+
+  
 
    
    <script src="JavaScript/donation.js"></script>
