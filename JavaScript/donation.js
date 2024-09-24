@@ -145,3 +145,11 @@ document.getElementById('donation').addEventListener('click',function(){
 document.getElementById('history').addEventListener('click',function(){
     getContainerById('transection');
 })
+
+
+
+// swich to blag page
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href="/blog.html"
+})

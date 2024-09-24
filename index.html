@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feel for Bangladesh </title>
     <!-- daisy UI -->    
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -19,12 +19,12 @@
         <nav class="w-11/12 mx-auto pt-2  ">
             <div class="navbar bg-stone-50">
                 <div class="navbar-start ">
-                  <button class="btn w-24 font-bold bg-lime-300 hover:bg-lime-400 text-base">Blog</button>
+                  <button id="blog-btn" class="btn w-24 font-bold bg-lime-300 hover:bg-lime-400 text-base">Blog</button>
                     
                 </div>
                 <div class="navbar-center">
                   <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png" alt="">
-                  <a class="btn btn-ghost text-xl">Feel For Bangladesh</a>
+                  <a class="btn btn-ghost text-lg font-medium">Feel For Bangladesh</a>
                 </div>
                 <div class="navbar-end">
                   <div class="flex gap-1 items-center">
@@ -51,11 +51,11 @@
   <!-- main start -->
     <main id="main-container" class="w-4/5 mx-auto ">
       <section>
-        <div class="flex px-6 pt-6 rounded-lg gap-7 border ">
+        <div class="flex sm:flex-col px-6 pt-6 rounded-lg gap-7 border ">
           <div>
             <img class="" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/noakhali.png" alt="">
           </div>        
-          <div class="w-1/2 ">
+          <div class="w-1/2 sm:w-full ">
             <div class="flex bg-stone-100 gap-1 px-2 py-2 rounded-lg max-w-32 w-auto items-center ">
               <img  src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
               <h3 id="noakhali-amount" class="font-medium text-zinc-500">14500</h3>
@@ -65,37 +65,33 @@
             <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
             <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
                <!-- modal start -->
-         <!-- Open the modal using ID.showModal() method -->
+        
          <button id="noakhali-donation-btn" class="btn w-full my-5 bg-lime-300 hover:bg-lime-400" onclick="my_modal_5.showModal('noakhali-donation-btn')">Donation Now</button>
          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
            <div class="modal-box  text-center  ">
              <h3 class="text-2xl font-bold ">Congrats!</h3>
              <img class="h-8 w-8 mx-auto my-4" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
              <p class="my-0">You Have Donate for Humankind</p>
-             <h3 class="font-bold text-xl my-3">Successfully</h3>
-            
+             <h3 class="font-bold text-xl my-3">Successfully</h3>            
              <div class="modal-action">
                <form method="dialog">
-                 <!-- if there is a button in form, it will close the modal -->
                  <button class="btn mx-auto">Close connfirmation</button>
                </form>
              </div>
            </div>
          </dialog>
-                 <!-- modal end -->
-          
+                 <!-- modal end -->         
           </div>
-        </div>
-       
+        </div>      
       </section>
 
 
       <section>
-        <div class="flex px-6 py-6 rounded-lg mt-6 gap-7 border ">
+        <div class="flex sm:flex-col px-6 py-6 rounded-lg mt-6 gap-7 border ">
           <div>
             <img class="" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/feni.png" alt="">
           </div>        
-          <div class="w-1/2 ">
+          <div class="w-1/2 sm:w-full">
             <div class="flex bg-stone-100 gap-1 px-2 py-2 rounded-lg max-w-32 w-auto items-center ">
               <img  src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
               <h3 id="feni-amount" class="font-medium text-zinc-500">25500</h3>
@@ -105,36 +101,33 @@
             <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
             <input id="feni-input" type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
              <!-- modal start -->
-         <!-- Open the modal using ID.showModal() method -->
+
          <button id="feni-donation-btn" class="btn w-full my-5 bg-lime-300 hover:bg-lime-400" onclick="my_modal_56.showModal('feni-donation-btn')">Donation Now</button>
          <dialog id="my_modal_56" class="modal modal-bottom sm:modal-middle">
            <div class="modal-box  text-center  ">
              <h3 class="text-2xl font-bold ">Congrats!</h3>
              <img class="h-8 w-8 mx-auto my-4" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
              <p class="my-0">You Have Donate for Humankind</p>
-             <h3 class="font-bold text-xl my-3">Successfully</h3>
-            
+             <h3 class="font-bold text-xl my-3">Successfully</h3>           
              <div class="modal-action">
                <form method="dialog">
-                 <!-- if there is a button in form, it will close the modal -->
                  <button class="btn mx-auto">Close connfirmation</button>
                </form>
              </div>
            </div>
          </dialog>
-                 <!-- modal end -->
-          
+                 <!-- modal end -->         
           </div>
         </div>
       </section>
 
 
       <section>
-        <div class="flex px-6 py-6 rounded-lg mt-6 gap-7 border mb-20 ">
+        <div class="flex sm:flex-col px-6 py-6 rounded-lg mt-6 gap-7 border mb-20 ">
           <div>
             <img class="" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/quota-protest.png" alt="">
           </div>        
-          <div class="w-1/2 ">
+          <div class="w-1/2 sm:w-full ">
             <div class="flex bg-stone-100 gap-1 px-2 py-2 rounded-lg max-w-32 w-auto items-center">
               <img  src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
               <h3 id="quota-donation-amount" class="font-medium text-zinc-500">12000</h3>
@@ -144,36 +137,28 @@
             <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
             <input id="quota-input" type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
              <!-- modal start -->
-         <!-- Open the modal using ID.showModal() method -->
+
          <button id="quota-movement-btn" class="btn w-full my-5 bg-lime-300 hover:bg-lime-400" onclick="my_modal_55.showModal('quota-movement-btn')">Donation Now</button>
          <dialog id="my_modal_55" class="modal modal-bottom sm:modal-middle">
            <div class="modal-box  text-center  ">
              <h3 class="text-2xl font-bold ">Congrats!</h3>
              <img class="h-8 w-8 mx-auto my-4" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
              <p class="my-0">You Have Donate for Humankind</p>
-             <h3 class="font-bold text-xl my-3">Successfully</h3>
-            
+             <h3 class="font-bold text-xl my-3">Successfully</h3>           
              <div class="modal-action">
                <form method="dialog">
-                 <!-- if there is a button in form, it will close the modal -->
                  <button class="btn mx-auto">Close connfirmation</button>
                </form>
              </div>
            </div>
          </dialog>
-                 <!-- modal end -->
-          
+                 <!-- modal end -->         
           </div>
         </div>
       </section>
 
-
-      
-
     </main>
   <!-- main end -->
-
-  
 
    
    <script src="JavaScript/donation.js"></script>
