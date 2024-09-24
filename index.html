@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy UI -->    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+</head>
+<body>
+    <header class="sticky top-0  ">
+      <section class=" h-24 border bg-stone-50 ">
+        <nav class="w-11/12 mx-auto pt-2  ">
+            <div class="navbar bg-stone-50">
+                <div class="navbar-start ">
+                  <button class="btn w-24 font-bold bg-lime-300 hover:bg-lime-400 text-base">Blog</button>
+                    
+                </div>
+                <div class="navbar-center">
+                  <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png" alt="">
+                  <a class="btn btn-ghost text-xl">Feel For Bangladesh</a>
+                </div>
+                <div class="navbar-end">
+                  <div class="flex gap-1 items-center">
+                    <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+                    <h2 id="my-balance" class="font-medium text-zinc-500">5500 </h2>
+                    <h3 class="font-medium text-zinc-500">BDT</h3>
+                  </div>
+                </div>
+              </div>
+        </nav>
+      </section>
+      <section>
+        <div class="flex justify-center gap-5 border pt-12 pb-6 bg-stone-50 ">
+          <button class="btn w-28 font-bold text-base bg-lime-300 hover:bg-lime-400 ">Donation</button>
+          <button class="btn w-24 font-bold text-base">History</button>
+        </div>
+      </section>
+    </header>
+  <!-- main start -->
+    <main class="w-4/5 mx-auto ">
+      <section>
+        <div class="flex px-6 pt-6 rounded-lg gap-7 border ">
+          <div>
+            <img class="" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/noakhali.png" alt="">
+          </div>        
+          <div class="w-1/2 ">
+            <div class="flex bg-stone-100 gap-1 px-2 py-2 rounded-lg max-w-32 w-auto items-center ">
+              <img  src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+              <h3 id="noakhali-amount" class="font-medium text-zinc-500">14500</h3>
+              <h3 class="font-medium text-zinc-500">BDT</h3>
+            </div>
+            <h3 class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
+            <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
+            <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
+               <!-- modal start -->
+         <!-- Open the modal using ID.showModal() method -->
+         <button id="noakhali-donation-btn" class="btn w-full" onclick="my_modal_5.showModal('noakhali-donation-btn')">Donation Now</button>
+         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+           <div class="modal-box">
+             <h3 class="text-lg font-bold">Congratulations!</h3>
+             <p class="py-4">You Donated ..... tk</p>
+             <div class="modal-action">
+               <form method="dialog">
+                 <!-- if there is a button in form, it will close the modal -->
+                 <button class="btn">Close</button>
+               </form>
+             </div>
+           </div>
+         </dialog>
+                 <!-- modal end -->
+          
+          </div>
+        </div>
+       
+      </section>
+      <section>
+        <div class="flex px-6 py-6 rounded-lg mt-6 gap-7 border ">
+          <div>
+            <img class="" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/feni.png" alt="">
+          </div>        
+          <div class="w-1/2 ">
+            <div class="flex bg-stone-100 gap-1 px-2 py-2 rounded-lg max-w-32 w-auto items-center ">
+              <img  src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+              <h3 class="font-medium text-zinc-500">25500</h3>
+              <h3 class="font-medium text-zinc-500">BDT</h3>
+            </div>
+            <h3 class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
+            <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
+            <input type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
+            <button class="btn w-full bg-lime-300 hover:bg-lime-400  rounded-lg my-5">Donate Now</button>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="flex px-6 py-6 rounded-lg mt-6 gap-7 border mb-20 ">
+          <div>
+            <img class="" src="B10A5-DOM-Quest-Build-and-Manipulate/assets/quota-protest.png" alt="">
+          </div>        
+          <div class="w-1/2 ">
+            <div class="flex bg-stone-100 gap-1 px-2 py-2 rounded-lg max-w-32 w-auto items-center">
+              <img  src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+              <h3 class="font-medium text-zinc-500">12000</h3>
+              <h3 class="font-medium text-zinc-500">BDT</h3>
+            </div>
+            <h3 class="font-bold text-xl my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quas voluptatum ex,</h3>
+            <p class="my-3 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae numquam itaque fugit aperiam quos quidem dicta, sapiente culpa consequuntur laudantium consectetur et repellendus delectus dolorem inventore, deserunt veritatis, eum quas? Aperiam modi maxime sequi in?</p>
+            <input type="text" placeholder="Write Donation Amount" class="input input-bordered rounded-lg w-full " />
+            <button class="btn w-full bg-lime-300 hover:bg-lime-400   rounded-lg my-5">Donate Now</button>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  <!-- main end -->
+
+   
+   <script src="JavaScript/donation.js"></script>
+   <script src="JavaScript/utilities.js"></script>
+</body>
+</html>
