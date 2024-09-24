@@ -139,11 +139,20 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
 
 document.getElementById('donation').addEventListener('click',function(){
     getContainerById('main-container');
-    document.getElementById('history').classList.add('bg-lime-300')
+    
 })
 
 document.getElementById('history').addEventListener('click',function(){
     getContainerById('transection');
+    
+})
+
+document.getElementById('donation').addEventListener('click',function(){
+    getColorById('donation');
+})
+
+document.getElementById('history').addEventListener('click',function(){
+    getColorById('history');
 })
 
 

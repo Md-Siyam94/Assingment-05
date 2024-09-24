@@ -20,3 +20,10 @@ function getContainerById(id){
     document.getElementById(id).classList.remove('hidden');
 
 }
+
+function getColorById(id){
+    document.getElementById('donation').classList.remove('bg-lime-300');
+    document.getElementById('history').classList.remove('bg-lime-300');
+
+    document.getElementById(id).classList.add('bg-lime-300');
+}
