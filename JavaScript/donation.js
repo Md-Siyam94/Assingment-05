@@ -18,48 +18,62 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
     
         document.getElementById('noakhali-amount').innerText = newDonationOfNoakhali;
         console.log(newDonationOfNoakhali)
+
+         
+    }
+    else{
+        alert('Please Try again !')
     }
 })
 
 // Feni-Float
-document.getElementById('').addEventListener('click',function(event){
+document.getElementById('feni-donation-btn').addEventListener('click',function(event){
     event.preventDefault();
     
-    const noakhaliInputNumber = getInputValueById('noakhali-input');
-    console.log(noakhaliInputNumber)
+    const feniInputNumber = getInputValueById('feni-input');
+    console.log(feniInputNumber)
     
-    if(typeof noakhaliInputNumber === 'number' && noakhaliInputNumber > 0){
+    if(typeof feniInputNumber === 'number' && feniInputNumber > 0){
         const myBalance = getTextValueById('my-balance')
-        const substraction = myBalance - noakhaliInputNumber ;
+        const substraction = myBalance - feniInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
         if(substraction < 0){
             alert('Your Balance is 0 tk')
-        }
-        const noakhaliDonationBalance = getTextValueById('noakhali-amount');
-        const newDonationOfNoakhali = noakhaliDonationBalance + noakhaliInputNumber;
+        };
+        const feniDonationBalance = getTextValueById('feni-amount');
+        const newDonationOfFeni = feniDonationBalance + feniInputNumber;
     
-        document.getElementById('noakhali-amount').innerText = newDonationOfNoakhali;
-        console.log(newDonationOfNoakhali)
+        document.getElementById('feni-amount').innerText = newDonationOfFeni;
+        console.log(newDonationOfFeni)
+
+      
+
+    }
+    else{
+        alert('Please Try again !')
     }
 })
 // Student-Aldolon
-document.getElementById('noakhali-donation-btn').addEventListener('click',function(event){
+document.getElementById('quota-movement-btn').addEventListener('click',function(event){
     event.preventDefault();
     
-    const noakhaliInputNumber = getInputValueById('noakhali-input');
-    console.log(noakhaliInputNumber)
+    const quotaInputNumber = getInputValueById('quota-input');
+    console.log(quotaInputNumber)
     
-    if(typeof noakhaliInputNumber === 'number' && noakhaliInputNumber > 0){
+    if(typeof quotaInputNumber === 'number' && quotaInputNumber > 0){
         const myBalance = getTextValueById('my-balance')
-        const substraction = myBalance - noakhaliInputNumber ;
+        const substraction = myBalance - quotaInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
         if(substraction < 0){
             alert('Your Balance is 0 tk')
         }
-        const noakhaliDonationBalance = getTextValueById('noakhali-amount');
-        const newDonationOfNoakhali = noakhaliDonationBalance + noakhaliInputNumber;
+        const quotaDonationBalance = getTextValueById('quota-donation-amount');
+        const newDonationOfQuotaMovement = quotaDonationBalance + quotaInputNumber;
     
-        document.getElementById('noakhali-amount').innerText = newDonationOfNoakhali;
-        console.log(newDonationOfNoakhali)
+        document.getElementById('quota-donation-amount').innerText = newDonationOfQuotaMovement;
+        console.log(newDonationOfQuotaMovement)
+    }
+    else{
+        alert('Please Try again !')
     }
 })
