@@ -10,8 +10,9 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
         const myBalance = getTextValueById('my-balance')
         const substraction = myBalance - noakhaliInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
-        if(substraction < 0){
-            alert('Your Balance is 0 tk')
+        if(substraction < '0'){
+            alert('Insufficient Balance')
+        
         }
         const noakhaliDonationBalance = getTextValueById('noakhali-amount');
         const newDonationOfNoakhali = noakhaliDonationBalance + noakhaliInputNumber;
@@ -57,7 +58,7 @@ document.getElementById('feni-donation-btn').addEventListener('click',function(e
         const substraction = myBalance - feniInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
         if(substraction < 0){
-            alert('Your Balance is 0 tk')
+            alert('Insufficient Balance')
         };
         const feniDonationBalance = getTextValueById('feni-amount');
         const newDonationOfFeni = feniDonationBalance + feniInputNumber;
@@ -102,7 +103,7 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
         const substraction = myBalance - quotaInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
         if(substraction < 0){
-            alert('Your Balance is 0 tk')
+            alert('Insufficient Balance')
         }
         const quotaDonationBalance = getTextValueById('quota-donation-amount');
         const newDonationOfQuotaMovement = quotaDonationBalance + quotaInputNumber;
