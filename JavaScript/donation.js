@@ -37,6 +37,7 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
         h3.innerText = `You have Donated ${noakhaliInputNumber} tk on ${donationText}`
         div.append(h3);
 
+        
         document.getElementById('transection').appendChild(div)
 
 
@@ -102,7 +103,7 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
         const myBalance = getTextValueById('my-balance')
         const substraction = myBalance - quotaInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
-        if(substraction < 0){
+        if(substraction > 0){
             alert('Insufficient Balance')
         }
         const quotaDonationBalance = getTextValueById('quota-donation-amount');
@@ -115,25 +116,25 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
         // text
         const donationText = document.getElementById('movemnet-donation-text').innerText;
         // Adding Transection
-        const div = document.createElement('div')
-        div.classList.add('border')
-        div.classList.add('h-24')
-        div.classList.add('w-11/12')
-        div.classList.add('p-4') 
-        div.classList.add('mx-auto')
-        div.classList.add('my-6')
-        div.classList.add('rounded-lg')
-        const h3 = document.createElement('h3')
-        h3.classList.add('text-base')
-        h3.classList.add('font-medium')
-        h3.innerText = `You have Donated ${quotaInputNumber} tk on ${donationText}`
+        const div = document.createElement('div');
+        div.classList.add('border');
+        div.classList.add('h-24');
+        div.classList.add('w-11/12');
+        div.classList.add('p-4') ;
+        div.classList.add('mx-auto');
+        div.classList.add('my-6');
+        div.classList.add('rounded-lg');
+        const h3 = document.createElement('h3');
+        h3.classList.add('text-base');
+        h3.classList.add('font-medium');
+        h3.innerText = `You have Donated ${quotaInputNumber} tk on ${donationText}`;
         div.append(h3);
 
-        document.getElementById('transection').appendChild(div)
+        document.getElementById('transection').appendChild(div);
 
     }
     else{
-        alert('Please Try again !')
+        alert('Please Try again !');
     }
 })
 
