@@ -115,7 +115,7 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
 
          // adding transections
         // text
-        const donationText = document.getElementById('movemnet-donation-text').innerText;
+        const donationText = document.getElementById('movement-donation-text').innerText;
         // Adding Transection
         const div = document.createElement('div');
         div.classList.add('border');
@@ -163,5 +163,5 @@ document.getElementById('history').addEventListener('click',function(){
 // swich to blag page
 
 document.getElementById('blog-btn').addEventListener('click',function(){
-    window.location.href="./blog.html"
+    window.location.href="https://md-siyam94.github.io/Assingment-05/blog.html"
 })
