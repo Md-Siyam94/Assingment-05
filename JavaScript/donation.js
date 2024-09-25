@@ -103,7 +103,7 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
         const myBalance = getTextValueById('my-balance')
         const substraction = myBalance - quotaInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
-        if(substraction > 0){
+        if(substraction < 0){
             return alert('Insufficient Balance');
 
         }
