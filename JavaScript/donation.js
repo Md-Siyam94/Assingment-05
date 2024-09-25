@@ -59,7 +59,7 @@ document.getElementById('feni-donation-btn').addEventListener('click',function(e
         const substraction = myBalance - feniInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
         if(substraction < 0){
-            alert('Insufficient Balance')
+            return alert('Insufficient Balance');
         };
         const feniDonationBalance = getTextValueById('feni-amount');
         const newDonationOfFeni = feniDonationBalance + feniInputNumber;
@@ -104,7 +104,7 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
         const substraction = myBalance - quotaInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
         if(substraction > 0){
-            alert('Insufficient Balance')
+            return alert('Insufficient Balance');
 
         }
         const quotaDonationBalance = getTextValueById('quota-donation-amount');
