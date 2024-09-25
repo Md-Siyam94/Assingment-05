@@ -11,8 +11,8 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
         const substraction = myBalance - noakhaliInputNumber ;
         document.getElementById('my-balance').innerText = substraction;
         if(substraction < '0'){
-            alert('Insufficient Balance')
-        
+            
+            return alert('Insufficient Balance');
         }
         const noakhaliDonationBalance = getTextValueById('noakhali-amount');
         const newDonationOfNoakhali = noakhaliDonationBalance + noakhaliInputNumber;
@@ -105,6 +105,7 @@ document.getElementById('quota-movement-btn').addEventListener('click',function(
         document.getElementById('my-balance').innerText = substraction;
         if(substraction > 0){
             alert('Insufficient Balance')
+
         }
         const quotaDonationBalance = getTextValueById('quota-donation-amount');
         const newDonationOfQuotaMovement = quotaDonationBalance + quotaInputNumber;
@@ -162,5 +163,5 @@ document.getElementById('history').addEventListener('click',function(){
 // swich to blag page
 
 document.getElementById('blog-btn').addEventListener('click',function(){
-    window.location.href="/blog.html"
+    window.location.href="./blog.html"
 })
